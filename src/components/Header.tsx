@@ -19,9 +19,9 @@ const Header = ({ onLoginClick, isLoggedIn, userName, userScore }: HeaderProps) 
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-br from-brand-purple to-brand-dark rounded-lg flex items-center justify-center">
-              <span className="text-brand-light font-bold text-sm">LI</span>
+              <span className="text-brand-light font-bold text-sm">NB</span>
             </div>
-            <h1 className="text-xl font-bold text-brand-purple">LocationIQ</h1>
+            <h1 className="text-xl font-bold text-brand-purple">NextBi</h1>
           </div>
 
           {/* Navigation */}

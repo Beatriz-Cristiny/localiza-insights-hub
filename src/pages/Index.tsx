@@ -28,10 +28,10 @@ const Index = () => {
           <div className="text-center text-brand-light max-w-4xl mx-auto px-4">
             <div className="mb-8">
               <div className="w-20 h-20 bg-brand-light rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <span className="text-3xl font-bold text-brand-purple">LI</span>
+                <span className="text-3xl font-bold text-brand-purple">NB</span>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Location<span className="text-brand-warning">IQ</span>
+                Next<span className="text-brand-warning">Bi</span>
               </h1>
               <p className="text-xl md:text-2xl text-brand-light/80 mb-8">
                 Descubra o melhor local para seu negócio com inteligência de dados
