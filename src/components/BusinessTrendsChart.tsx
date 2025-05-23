@@ -14,10 +14,10 @@ const businessData = [
   { year: '2024', opened: 91, closed: 22 },
 ];
 
+// Properly typed config object to match ChartConfig
 const config = {
   opened: {
     label: 'Empresas Abertas',
-    color: '#4ade80', // Success green color
     theme: {
       light: '#4ade80',
       dark: '#4ade80',
@@ -25,7 +25,6 @@ const config = {
   },
   closed: {
     label: 'Empresas Fechadas',
-    color: '#f87171', // Danger red color
     theme: {
       light: '#f87171',
       dark: '#f87171',
