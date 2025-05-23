@@ -1,10 +1,10 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Filter, TrendingUp, TrendingDown } from 'lucide-react';
+import BusinessTrendsChart from './BusinessTrendsChart';
 
 const InteractiveMap = () => {
   const [selectedSector, setSelectedSector] = useState('all');
@@ -209,6 +209,9 @@ const InteractiveMap = () => {
           </CardContent>
         </Card>
       </div>
+
+      {/* Business Trends Chart */}
+      <BusinessTrendsChart />
     </div>
   );
 };
