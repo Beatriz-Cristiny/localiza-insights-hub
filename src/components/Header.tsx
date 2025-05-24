@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Bell, Search, User } from 'lucide-react';
@@ -12,12 +13,14 @@ interface HeaderProps {
 }
 
 const Header = ({ onLoginClick, isLoggedIn, userName, userScore }: HeaderProps) => {
+  const navigate = useNavigate();
+
   return (
     <header className="bg-white/80 backdrop-blur-sm border-b border-brand-purple/10 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate('/')}>
             <div className="w-8 h-8 bg-gradient-to-br from-brand-purple to-brand-dark rounded-lg flex items-center justify-center">
               <span className="text-brand-light font-bold text-sm">NB</span>
             </div>
@@ -51,7 +54,7 @@ const Header = ({ onLoginClick, isLoggedIn, userName, userScore }: HeaderProps) 
                   <Bell className="w-4 h-4" />
                   <span className="absolute -top-1 -right-1 w-2 h-2 bg-brand-warning rounded-full"></span>
                 </Button>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 cursor-pointer" onClick={() => navigate('/profile')}>
                   <div className="text-right hidden sm:block">
                     <p className="text-sm font-medium text-brand-purple">{userName}</p>
                     <p className="text-xs text-brand-purple/60">{userScore} pontos</p>

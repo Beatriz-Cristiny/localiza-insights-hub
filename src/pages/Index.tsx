@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '@/components/Header';
 import LoginModal from '@/components/LoginModal';
 import Dashboard from '@/components/Dashboard';
@@ -7,6 +8,7 @@ import InteractiveMap from '@/components/InteractiveMap';
 import ContributeData from '@/components/ContributeData';
 
 const Index = () => {
+  const navigate = useNavigate();
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState({ name: '', email: '', score: 0 });
@@ -129,6 +131,12 @@ const Index = () => {
                   }`}
                 >
                   Contribuir
+                </button>
+                <button
+                  onClick={() => navigate('/profile')}
+                  className="py-4 px-2 border-b-2 border-transparent text-brand-purple/60 hover:text-brand-purple font-medium text-sm transition-colors"
+                >
+                  Perfil
                 </button>
               </nav>
             </div>
